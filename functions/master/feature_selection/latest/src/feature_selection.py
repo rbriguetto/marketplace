@@ -299,7 +299,7 @@ def feature_selection(context,
         # Defining our new feature vector
         top_features_fv = fs.FeatureVector(output_vector_name,
                                            matched_selections,
-                                           label_feature="labels.label",
+                                           label_feature=label_column,
                                            description='feature vector composed strictly of our top features')
 
         # Saving
